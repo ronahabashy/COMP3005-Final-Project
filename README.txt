@@ -5,18 +5,12 @@ Rona Habashy
 
 primary use case: show these articles with info --most curated by users articles
 desc order by votes 
+
 this is the home page
 
-secondary:
-look up articles and articles info (use date)
-
-SearchByDate --popularity -- sort by 
-SearchByAuthor -- assess bias of specific author 
-
-N-N case: searchByarticleID
-or searchByAD
-
-shows all the ads on a specific article
-backwards: show all articles containing specific ad id
-
-select * from advertisement where articleID=?
+author    --> nameID, user_name, last_name, year_born, address, email, billingInformation
+books     --> book_id, publish_source, publish_date, publish_author, bookName, ISBN, ganre, authorName
+bookStore --> bookList, workers, customers
+users     --> user_name, first_name, last_name, year_born, shippingInformation, billingInformation, email, userID
+checkOut  --> userID, user_name, userRegistered, authorsPaid, trackingNumber
+owners    --> specialLogin, addBook, removeBook
