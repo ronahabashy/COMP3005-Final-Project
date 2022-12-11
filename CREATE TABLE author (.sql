@@ -26,18 +26,6 @@ CREATE TABLE bookStore (
     workers varchar(20) NOT NULL,
     customers varchar(20) NOT NULL
 );
-A ( N, U, L, Y, D, E, B )
-K (I, P, T, H, O, S, G, N)
-R (KL, W, C)
-US (U, F, L, Y, SH, B, E, ID )
-CH (ID, U, R, PAID, TRACK)
-OW (SPE, AD, REM)
-author    --> nameID, user_name, last_name, year_born, address, email, billingInformation
-books     --> book_id, publish_source, publish_date, publish_author, bookName, ISBN, ganre, authorName
-bookStore --> bookList, workers, customers
-users     --> user_name, first_name, last_name, year_born, shippingInformation, billingInformation, email, userID
-checkOut  --> userID, user_name, userRegistered, authorsPaid, trackingNumber
-owners    --> specialLogin, addBook, removeBook
 
 CREATE TABLE users (
     user_name varchar(20) primary key NOT NULL,
